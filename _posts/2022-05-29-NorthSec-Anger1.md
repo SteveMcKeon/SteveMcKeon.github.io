@@ -3,7 +3,7 @@ layout: post
 title: Portobello 53 - Anger 1/2
 subtitle: NorthSec2022 CTF Challenge
 thumbnail-img: /assets/img/northsec-icon.png
-tags: [NorthSec2022, ctf]
+tags: [NorthSec2022, ctf, Portobello 53]
 ---
 
 Looking through the other interesting UDP streams from portobello53.pcapng, UDP stream 2 stood out and appeared to contain some Base64 encoded data. 
