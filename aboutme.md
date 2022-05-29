@@ -1,16 +1,19 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Coordinates
+subtitle: Capt Stephen McKeon, RMC, BEng, MASc
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+CNO Instructor, Directorate Cyber Force Operations Development (D Cyber Ops FD) - RMC Kingston Detachment
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Coordinates 
+Capt Stephen McKeon  
+Sawyer 4106  
+~~613-541-6000 ext.  3802  ~~
+stephen.mckeon@rmc-cmr.ca 
 
-What else do you need?
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Department of Electrical and Computer Engineering  
+Royal Military College of Canada  
+PO Box 17000, Stn Forces  
+Kingston, ON K7K 7B4  
