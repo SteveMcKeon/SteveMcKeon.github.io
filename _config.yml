@@ -15,10 +15,10 @@ author: Stephen McKeon
 
 navbar-links:
   Contact: "aboutme"
-  Courses:
-    - EEE243: "EEE243"
-    - EEE404: "EEE404"
-    - EEE335: "EEE335"
+#  Courses:
+#    - EEE243: "EEE243"
+#    - EEE404: "EEE404"
+#    - EEE335: "EEE335"
   Resources:
     - segfaults: "http://segfaults.net"
 #    - Good Coding Style: "http://mckeon.segfaults.net/Resources/coding-style/"
