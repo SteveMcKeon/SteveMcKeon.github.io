@@ -6,7 +6,7 @@ thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, ctf, Portobello 53]
 ---
 
-This stream revolves around DNS tunnels - primarily identifying and decoding them. For the most part, they are pretty easy to spot. DNS requires that readable characters are used, meaning arbitrary data (i.e., high entropy URLs) stand out like a sore thumb. 
+This Portobello 53 challenges revolve around DNS tunnels - primarily identifying and decoding them. For the most part, they are pretty easy to spot. DNS requires that readable characters are used, meaning arbitrary data (i.e., high entropy URLs) stand out like a sore thumb. 
 The only subset of DNS tunnels that can be tricky to spot are those that rely on very low bandwidth communication, such as sending a character at a time over a long period of time. 
 
 After downloading and opening the pcapng in Wireshark, I started off by following the UDP streams to see if anything stood out.
