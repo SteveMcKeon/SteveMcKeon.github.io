@@ -3,7 +3,7 @@ layout: post
 title: Portobello 53 - Denial 1/2
 subtitle: NorthSec2022 CTF Challenge
 thumbnail-img: /assets/img/northsec-icon.png
-tags: [NorthSec2022, ctf]
+tags: [NorthSec2022, ctf, Portobello 53]
 ---
 
 This stream revolves around DNS tunnels - primarily identifying and decoding them. For the most part, they are pretty easy to spot. DNS requires that readable characters are used, meaning arbitrary data (i.e., high entropy URLs) stand out like a sore thumb. 
