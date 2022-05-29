@@ -16,11 +16,11 @@ There are many response packets of length 150 that are AAAA records with *no err
 
 Upon closer inspection, you can easily see the word "*flag*" present in the data. Let's try to isolate it. I'll add an additional Wireshark filter on the packet length, and use a similar approach as the last challenge. 
 
-![DNS stream 8 sorted by packet length](../assets/img/denial2/denial2_2.png){: .mx-auto.d-block :}
+![DNS stream 8 isolated by packet length](../assets/img/denial2/denial2_2.png){: .mx-auto.d-block :}
 
 By copying all the packets right from Wireshark as *Printable Text*, then using some RegEx-fu to isolate the characters we want, we're left with:
 
-![DNS stream 8 sorted by packet length](../assets/img/denial2/denial2_3.png){: .mx-auto.d-block :}
+![isolated data](../assets/img/denial2/denial2_3.png){: .mx-auto.d-block :}
 
-Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point:  
+Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point:
 **flag-dns-serverhidinginternetnoise**.
