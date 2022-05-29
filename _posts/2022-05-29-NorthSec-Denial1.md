@@ -2,6 +2,7 @@
 layout: post
 title: Portobello 53 - Denial 1/2
 subtitle: NorthSec2022 CTF Challenge
+thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, ctf]
 ---
 
