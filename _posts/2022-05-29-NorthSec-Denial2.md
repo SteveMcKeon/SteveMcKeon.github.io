@@ -3,7 +3,7 @@ layout: post
 title: Portobello 53 - Denial 2/2
 subtitle: NorthSec2022 CTF Challenge
 thumbnail-img: /assets/img/northsec-icon.png
-tags: [NorthSec2022, ctf]
+tags: [NorthSec2022, ctf, Portobello 53]
 ---
 
 Based on the first Denial flag, there was some additional data that was preventing our simple approach from properly decoding all the text. Let's examine UDP stream 8 again and see if anything stands out... it becomes obvious when sorting the data by the length of the packet. 
