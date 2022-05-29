@@ -22,5 +22,5 @@ By copying all the packets right from Wireshark as *Printable Text*, then using 
 
 ![isolated data](../assets/img/denial2/denial2_3.png){: .mx-auto.d-block :}
 
-Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point:
+Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point:  
 **flag-dns-serverhidinginternetnoise**.
