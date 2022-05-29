@@ -20,7 +20,7 @@ navbar-links:
     - EEE404: "EEE404"
     - EEE335: "EEE335"
   Resources:
-    - segfaults.net: "http://segfaults.net"
+    - segfaults: "http://segfaults.net"
 #    - Good Coding Style: "http://mckeon.segfaults.net/Resources/coding-style/"
     - Online IDE: "https://repl.it"
 
