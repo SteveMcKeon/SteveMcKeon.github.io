@@ -18,3 +18,18 @@ Upon examining the UDP stream, I could see that immediately before the string "$
 
 ![DNS stream 8](../assets/img/denial1_1.png){: .mx-auto.d-block :}
 
+Since the characters we're looking to isolate are repeated in both the sender and receiver, let's isolate the conversation to just one direction.
+
+From here, we could do some commandlinefu to isolate what we want, or we could just throw it in a text editor like sublime and use *find and replace* to remove the extra junk. We can then search for *some character* followed by the string, and replace everything with just the character and a newline.
+
+![After replacing string](../assets/img/denial1_2.png){: .mx-auto.d-block :}
+
+Now let's isolate the last character of every line.
+
+![Final isolation](../assets/img/denial1_3.png){: .mx-auto.d-block :}
+
+When trying to read the string, I can see that literal " " and "-" have been replaced with "space" and "dash". A quick *find and replace* results in the following:
+
+![Final isolation](../assets/img/denial1_4.png){: .mx-auto.d-block :}
+
+There's obviously some extra text that this didn't properly decode, but nonetheless, we have our first flag for 1 point: **flag-dns-as-covert-communication-channel**.
