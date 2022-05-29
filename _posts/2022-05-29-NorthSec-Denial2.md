@@ -7,7 +7,9 @@ tags: [NorthSec2022, ctf]
 ---
 
 ## Denial 2/2
-Based on the first Denial flag, there was some additional data that was preventing our simple approach from properly decoding all the text. Let's examine UDP stream 8 again and see if anything stands out... it becomes obvious when sorting the data by the length of the packet. There are many response packets of length 150 that are AAAA records with *no error* flags set, whereas the data from the previous flag were taken from query or response packets of length 122, but the response packets had the *No such name* flags set.
+Based on the first Denial flag, there was some additional data that was preventing our simple approach from properly decoding all the text. Let's examine UDP stream 8 again and see if anything stands out... it becomes obvious when sorting the data by the length of the packet. 
+
+There are many response packets of length 150 that are AAAA records with *no error* flags set, whereas the data from the previous flag were taken from query or response packets of length 122, but the response packets had the *No such name* flags set.
 
 ![DNS stream 8 sorted by packet length](../assets/img/denial2/denial2_1.png){: .mx-auto.d-block :}
 
@@ -19,4 +21,5 @@ By copying all the packets right from Wireshark as *Printable Text*, then using 
 
 ![DNS stream 8 sorted by packet length](../assets/img/denial2/denial2_3.png){: .mx-auto.d-block :}
 
-Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point: **flag-dns-serverhidinginternetnoise**.
+Similarly to the last challenge, let's replace the literal string "dash" with the "-" character, and we have our second flag, for an additional 1 point:
+**flag-dns-serverhidinginternetnoise**.
