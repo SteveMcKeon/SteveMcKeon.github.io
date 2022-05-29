@@ -9,7 +9,6 @@ CNO Instructor, Directorate Cyber Force Operations Development (D Cyber Ops FD) 
 ### Coordinates 
 Capt Stephen McKeon  
 Sawyer 4106  
-<s>613-541-6000 ext.  3802</s><br>
 stephen.mckeon@rmc-cmr.ca 
 
 
