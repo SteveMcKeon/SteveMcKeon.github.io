@@ -6,7 +6,7 @@ thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, ctf, Portobello 53]
 ---
 
-Back to examining the UDP streams in the original packet capture, portobello53.pcapng. UDP stream 9 with communication between /[IPV6/]::23 and /[IPV6/]::100 has some pretty suspect keywords present in the data...
+Back to examining the UDP streams in the original packet capture, portobello53.pcapng. UDP stream 9 with communication between \[IPV6\]::23 and \[IPV6\]::100 has some pretty suspect keywords present in the data...
 
 ![DNS stream 9](../assets/img/bargaining/bargaining1_1.png){: .mx-auto.d-block :}
 
@@ -14,7 +14,7 @@ As you can see, "SHELL:hostname" and "SHELL:whoami" stand out like sore thumbs. 
 
 ## Bargaining 1/3
 
-By looking at half of the stream with /[IPV6/]::100 as the sender, we can easily identify some more linux commands, but also our first flag!
+By looking at half of the stream with \[IPV6\]::100 as the sender, we can easily identify some more linux commands, but also our first flag!
 
 ![DNS stream 9, first flag](../assets/img/bargaining/bargaining1_2.png){: .mx-auto.d-block :}
  
