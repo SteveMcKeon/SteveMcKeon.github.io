@@ -14,7 +14,7 @@ The challenge instructions provide a few files, including Project64.exe, a Ninte
 
 ![Initial Screen](../assets/img/N64/N64_1.png){: .mx-auto.d-block :}
 
-By exploring the options, I found the key mapping from keyboard to an N64 controller, so I would know hot to control my potential character or otherwise play the game.
+By exploring the options, I found the key mapping from keyboard to an N64 controller, so I would know how to control my potential character or otherwise play the game.
 
 ![Controls](../assets/img/N64/N64_2.png){: .mx-auto.d-block :}
 
@@ -139,7 +139,7 @@ Similar to before, I found the next time the string "FLAG-%s%s%s%s" was printed,
 
 Following the xref back to a function at `0x80028410`, I stepped through with the debugger by setting some strategic breakpoints until I eventually found a function call at `0x80028b84` that seemed to serve the same purpose as with the previous flag - if it returns 1, then instead of printing `INCOMPLETE` to the screen, some new code can be reached.
 
-The function at `0x80028698`:
+The function it calls can be found at `0x80028698`:
 ```c
 if ((_DAT_800570f8 & 0x80) == 0) {
   uVar1 = 0xffffffffffffffff;
@@ -179,7 +179,7 @@ else if ((_DAT_800570fc & 1) == 0) {
 return uVar1;
 ```
 
-This code is a bit more complicated then the previous flag's, but still not too bad. It seems to be using bitwise operators to check that the 2 inputs pass various checks. Let's clear up the code a little bit by replacing `0xffffffffffffffff` with `-1` and the some better variables names.
+This code is a bit more complicated then the previous flag's, but still not too bad. It seems to be using bitwise operators to check that the 2 inputs pass various checks. Let's clear up the code a little bit by replacing `0xffffffffffffffff` with `-1` and some better variables names.
 
 ```c
 if ((input0 & 0x80) == 0) {
@@ -223,7 +223,8 @@ return returnVar;
 Some of the if statements, when true, will result in a returnVar that we **don't** want, others are branches we **do** want to take.
 
 A quick table to summarize our findings, sorted by MSB:
-|**No Branch**|**Yes Branch**|**No Branch**|**Yes Branch**|**input0 bits**|**input1 bits**|
+|No Branch|Yes Branch|No Branch|Yes Branch|input0 bits|input1 bits|
+| :----------- | :----------- | :----------- | :----------- | :---: | :---: |
 |(input0 & 0x80) == 0|||(input1 & 0x80) == 0|1|0|
 ||(input0 & 0x40) == 0|(input1 & 0x40) == 0||0|1|
 |(input0 & 0x20) == 0|||(input1 & 0x20) == 0|1|0|
