@@ -223,16 +223,9 @@ return returnVar;
 Some of the if statements, when true, will result in a returnVar that we **don't** want, others are branches we **do** want to take.
 
 A quick table to summarize our findings, sorted by MSB:
-|No Branch|Yes Branch|No Branch|Yes Branch|input0 bits|input1 bits|
-| :----------- | :----------- | :----------- | :----------- | :---: | :---: |
-|(input0 & 0x80) == 0|||(input1 & 0x80) == 0|1|0|
-||(input0 & 0x40) == 0|(input1 & 0x40) == 0||0|1|
-|(input0 & 0x20) == 0|||(input1 & 0x20) == 0|1|0|
-||(input0 & 0x10) == 0||(input1 & 0x10) == 0|0|0|
-||(input0 & 8) == 0|(input1 & 8) == 0||0|1|
-||(input0 & 4) == 0|(input1 & 4) == 0||0|1|
-|(input0 & 2) == 0||(input1 & 2) == 0||1|1|
-|(input0 & 1) == 0|||(input1 & 1) == 0|1|0|
+
+![Stage2 Table Summary](../assets/img/N64/N64_table.png){: .mx-auto.d-block :}
+
 
 ## Flag 2
 
