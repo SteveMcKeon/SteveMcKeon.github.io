@@ -43,7 +43,25 @@ Enter python and scapy. I filtered the original capture down to just the relevan
 
 Now all that's left is to grab all the data and stick it together, then write it to a file which we can then try to listen to.
 
-![mp3 scraper](../assets/img/anger/anger2_3.png){: .mx-auto.d-block :}
+```python
+#!/usr/bin/env python3
+from scapy.all import *
+from scapy.layers.dns import DNS, DNSRR
+import base64
+
+rdata = bytes()
+
+dns_packets = rdpcap('beats.ctf.pcapng')
+
+for pkt in dns_packets:
+    rdata = rdata + (pkt[DNSRR].rdata)[0]
+
+mp3_bytes = base64.b64decode(rdata)
+
+mp3_file = open("mp3_file.mp3", "wb")
+mp3_file.write(mp3_bytes)
+mp3_file.close()
+```
 
 Upon listening to the [mp3](../assets/files/mp3_file.mp3), which is a short 28 second clip, the song (Tripping on Mushrooms) is interrupted by someone who says "pardon the interruption but the flag is ... flag*dash*radiocashmoneymushroom247". So there's our next flag, for 2 points this time:  
 **flag-radiocashmoneymushroom247**.
