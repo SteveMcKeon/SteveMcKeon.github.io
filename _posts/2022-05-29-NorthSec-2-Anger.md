@@ -45,5 +45,5 @@ Now all that's left is to grab all the data and stick it together, then write it
 
 ![mp3 scraper](../assets/img/anger/anger2_3.png){: .mx-auto.d-block :}
 
-Upon listening to the mp3, which is a short 28 second clip, the song (Tripping on Mushrooms) is interrupted by someone who says "pardon the interruption but the flag is ... flag*dash*radiocashmoneymushroom247". So there's our next flag, for 2 points this time:  
+Upon listening to the [mp3](../assets/files/mp3_file.mp3) , which is a short 28 second clip, the song (Tripping on Mushrooms) is interrupted by someone who says "pardon the interruption but the flag is ... flag*dash*radiocashmoneymushroom247". So there's our next flag, for 2 points this time:  
 **flag-radiocashmoneymushroom247**.
