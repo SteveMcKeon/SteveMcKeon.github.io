@@ -22,7 +22,7 @@ Here's the half of the communication channel with the Base64 encoded data.
 
 There doesn't seem to be a quick and easy way to RegEx-fu the rest of this tunnel like we did for the previous flags, so lets level up and try something better.
 
-Enter python and scapy. I filtered the original capture down to just the relevant packets and saved it as a new pcap for use in a script. A quick test shows the pcap was correctly parsed and the data we want is present in the *rdata* field.
+Enter python and scapy. I filtered the original capture down to just the relevant packets and saved it as a new pcap for use in a script. A quick test shows the pcap was correctly parsed and the data we want is present in the *rdata* field of the DNSRR.
 
 ![Python and Scapy test](../assets/img/anger2/anger2_2.png){: .mx-auto.d-block :}
 
