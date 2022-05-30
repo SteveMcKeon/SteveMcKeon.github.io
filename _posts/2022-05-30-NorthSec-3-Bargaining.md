@@ -19,7 +19,7 @@ By looking at half of the stream with \[IPV6\]::100 as the sender, we can easily
 ![DNS stream 9, first flag](../assets/img/bargaining/bargaining1_2.png){: .mx-auto.d-block :}
  
 This is simple enough that we can just read and submit the 2 point flag right from here:  
-**flag-we_have_a_bad_case_of_ophiocordyceps_unilateralis**
+**flag-we_have_a_bad_case_of_ophiocordyceps_unilateralis**.
 
 ## Bargaining 2/3
 
