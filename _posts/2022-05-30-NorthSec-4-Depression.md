@@ -10,7 +10,7 @@ The final interesting UDP stream, stream 4, is all that's left of the Portobello
 
 ## Depression 1/3
 
-Similar to other DNS tunnels, the data is repeated in the sender and receiver, so we need only look at one side of the conversation between /[IPV6/]::9 and /[IPV6/]::100.
+Similar to other DNS tunnels, the data is repeated in the sender and receiver, so we need only look at one side of the conversation between \[IPV6\]::9 and \[IPV6\]::100.
 
 ![DNS stream 4](../assets/img/depression/depression1_1.png){: .mx-auto.d-block :}
 
@@ -35,7 +35,7 @@ Nice! It worked, and we have our first flag:
 
 ## Depression 2/3
 
-I spent a good hour or two trying to get various punycode packages to work with python, but I always ran into issues on certain lines. In the end, I wasn't able to automate the entire process, so resorted to a combination of [punycoder.com/](https://www.punycoder.com/) and [CyberChef](https://gchq.github.io/CyberChef/) to decode the entirety of the data. This took about a half hour, since they both accept multiple lines at a time. Eventually, I was left with a long file of... UNICODE art?
+I spent a good hour or two trying to get various punycode packages to work with python, but I always ran into issues on certain lines. In the end, I wasn't able to automate the entire process, so resorted to a combination of [punycoder.com](https://www.punycoder.com/) and [CyberChef](https://gchq.github.io/CyberChef/) to decode the entirety of the data. This took about 20 minutes - it wasn't too bad since they both accept multiple lines at a time. Eventually, I was left with a long file of... UNICODE art?
 
 ![UNICODE Art](../assets/img/depression/depression2_1.png){: .mx-auto.d-block :}
 
