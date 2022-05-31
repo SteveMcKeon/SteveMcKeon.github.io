@@ -32,9 +32,9 @@ Instead, I chose to focus my efforts on the easily identifiable changes in signa
 
 Eventually, I decided to try a more manual approach. I wanted to understand and identify how potential data was encoded here before I'd consider applying a transform to decode it programatically.
 
-Looking at the signal in front of the first *character*, instead of trying to interpret high and low voltages as 1s and 0s like you would with a digital signal, it seemed a better approach to instead interpret a given period of roughly 5µs as being either "on" or "off", i.e., 1s or 0s. .
+Looking at the signal in front of the first *character*, instead of trying to interpret high and low voltages as 1s and 0s like you would with a digital signal, it seemed a better approach to instead interpret a given period of roughly 5µs as being either "on" or "off", i.e., 1s or 0s.
 
-You can see what I mean in the following image, where labels `A-B` represent a `1`, labels `C-D` represent a `0`, and label `E` is where the *noise* starts for the remainder of the signal representing a *character*
+You can see what I mean in the following image, where labels `A-B` represent a `1`, labels `C-D` represent a `0`, and label `E` is where the *noise* starts for the remainder of the signal representing a *character*.
 
 ![First Character Encoded Data](../assets/img/logically/logically_5.png){: .mx-auto.d-block :}
 
