@@ -111,3 +111,7 @@ Finally, Column E uses this formula to convert the binary to an ASCII character:
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
 
 You can download the excel file [here](../assets/files/logically_bonus.xlsx).
+
+Now, this encoding very probably corresponds to some known scheme. If I had to guess, it's likely reverse encoded UART with 2 stop bits (the third bit I removed would correspondi to the `0` MSB for every ASCII character).
+
+I could explore further and try to get some software to analyze and decode it properly, butttt it only took 20 minutes to throw it into excel and solve it that way. I'm a big fan of simple solutions, whenever possible. :)
