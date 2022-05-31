@@ -14,7 +14,7 @@ The first flag made use of the `D1` and `D2` digital channels - the bonus flag i
 
 ## Initial Exploration
 
-Zooming out a little bit, I could could 43 discrete blocks of data in the signal. Odds are, each of these blocks represents a character of the flag we're after.
+Zooming out a little bit, I could count 43 discrete blocks of data in the signal. Odds are, each of these blocks represents a character of the flag we're after.
 
 ![Analog Characters](../assets/img/logically/logically_2.png){: .mx-auto.d-block :}
 
