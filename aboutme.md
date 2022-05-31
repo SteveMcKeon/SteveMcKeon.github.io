@@ -4,7 +4,7 @@ title: Coordinates
 subtitle: Capt Stephen McKeon, RMC, BEng, MASc
 ---
 
-CNO Instructor, Directorate Cyber Force Operations Development (D Cyber Ops FD) - RMC Kingston Detachment
+CNO Instructor, Directorate Cyber Operations Force Development (D Cyber Ops FD) - RMC Kingston Detachment
 
 ### Coordinates 
 Capt Stephen McKeon  
