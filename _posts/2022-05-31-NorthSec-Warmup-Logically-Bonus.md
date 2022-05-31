@@ -22,7 +22,7 @@ Based on the first image, though, I knew the data wasn't homogeneous across the 
 
 ![First Character Signal](../assets/img/logically/logically_3.png){: .mx-auto.d-block :}
 
-I use the word *noise* very intentionally. I tried to apply various analyzers to this area, but even just looking at it, it is too homogeneous. You could attempt to zoom **WAY** in and correlate the fluctuations in voltage to 1s and 0s, but aside from a periodic increase in frequency, which is sort of visible in the image below, I couldn't imagine any relevant data being hidden in this noise.
+I use the word *noise* very intentionally. I tried to apply various analyzers to this area (I tried hard, for like 6+ hours), but even just looking at it, it is too homogeneous. You could attempt to zoom **WAY** in and correlate the fluctuations in voltage to 1s and 0s, but aside from a periodic increase in frequency, which is sort of visible in the image below, I couldn't imagine any relevant data being hidden in this noise.
 
 ![Periodic increase in frequency](../assets/img/logically/logically_4.png){: .mx-auto.d-block :}
 
