@@ -18,7 +18,7 @@ Zooming out a little bit, I could count 43 discrete blocks of data in the signal
 
 ![Analog Characters](../assets/img/logically/logically_2.png){: .mx-auto.d-block :}
 
-Based on the first image, though, I knew the data wasn't homogeneous across the entirety of any given chunk. At the start of any given - let's just refer to these blocks of data as *characters*, since that's the assumption I'm working off of - there are distinct changes in the signal, followed by a relatively very long signal of what looks to be *noise*. Here's the first *character* to show you what I mean.
+Based on the first image, though, I knew the data wasn't homogeneous across the entirety of any given chunk. At the start of any given... - let's just refer to these blocks of data as *characters*, since that's the assumption I'm working off of - there are distinct changes in the signal, followed by a relatively very long signal of what looks to be *noise*. Here's the first *character* to show you what I mean.
 
 ![First Character Signal](../assets/img/logically/logically_3.png){: .mx-auto.d-block :}
 
