@@ -98,13 +98,13 @@ Here's the steps required shown on the first *character* block of data, to decod
 
 Stepping through the rest of the data and using some excel magic, the flag can be deciphered. 
 
-I input the data in Column B.
+I input the data in Column B. 
 Column C uses the following formula to flip the bits: 
-`=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)`
+`=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)` 
 Column D uses the following formula to reverse the bits: 
-`=TEXTJOIN("",1,MID(C2,{7,6,5,4,3,2,1},1))`
+`=TEXTJOIN("",1,MID(C2,{7,6,5,4,3,2,1},1))` 
 Finally, Column E uses this formula to convert the binary to an ASCII character: 
-`=CHAR(BIN2DEC(D2))`
+`=CHAR(BIN2DEC(D2))` 
 
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
 
