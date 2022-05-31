@@ -16,7 +16,7 @@ UDP streams 2, 4, 8, and 9 looked to be of interest. The Denial stream is UDP st
 ## Denial 1/2
 Upon examining the UDP stream, I could see that immediately before the string "$lag-dns-cannot-be-abused-pinky-swear.ctf" were single characters that were being sent in a DNS request from \[IPV6\]::beef to \[IPV6\]::100 and returned in a AAAA record.
 
-![DNS stream 8](../assets/img/denial/denial1_1.png){: .mx-auto.d-block :}
+[![DNS stream 8](../assets/img/denial/denial1_1.png)](../assets/img/denial/denial1_1.png)
 
 Since the characters we're looking to isolate are repeated in both the sender and receiver, let's isolate the conversation to just one direction.
 
