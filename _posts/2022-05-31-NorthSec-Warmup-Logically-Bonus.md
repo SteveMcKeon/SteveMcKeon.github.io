@@ -112,6 +112,6 @@ The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
 
 You can download the excel file [here](../assets/files/logically_bonus.xlsx).
 
-Now, this encoding very probably corresponds to some known scheme. If I had to guess, it's likely reverse encoded UART with 2 stop bits (the third bit I removed would correspond to the `0` MSB for every ASCII character).
+Now, this encoding very probably corresponds to some known scheme. If I had to guess, it's likely reverse encoded something with multiple stop bits, where a lack of signal is 1 and a positive signal is 0. This corresponds to the need to *flip* and *reverse* the bits in my manual solution. 
 
 I could explore further and try to get some software to analyze and decode it properly, butttt it only took 20 minutes to throw it into excel and solve it that way. I'm a big fan of simple solutions, whenever possible. :)
