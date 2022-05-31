@@ -98,6 +98,8 @@ Here's the steps required shown on the first *character* block of data, to decod
 
 Stepping through the rest of the data and using some excel magic, the flag can be deciphered. 
 
+![Solution](../assets/img/logically/logically_7.png){: .mx-auto.d-block :}
+
 I input the data in Column B. 
 Column C uses the following formula to flip the bits: 
 `=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)` 
@@ -107,7 +109,5 @@ Finally, Column E uses this formula to convert the binary to an ASCII character:
 `=CHAR(BIN2DEC(D2))` 
 
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
-
-![Solution](../assets/img/logically/logically_7.png){: .mx-auto.d-block :}
 
 You can download the excel file [here](../assets/files/logically_bonus.xlsx).
