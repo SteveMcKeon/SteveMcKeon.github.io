@@ -32,7 +32,9 @@ Instead, I chose to focus my efforts on the easily identifiable changes in signa
 
 Eventually, I decided to try a more manual approach. I wanted to understand and identify how potential data was encoded here before I'd consider applying a transform to decode it programatically.
 
-Looking at the signal in front of the first *character*, instead of trying to interpret high and low voltages as 1s and 0s like you would with a digital signal, it seemed a better approach to instead interpret a given period of roughly 5µs as being either "on" or "off", i.e., 1s or 0s. You can see what I mean in the following image, where labels A-B represent a 1, labels C-D represent a 0, and label E is where the *noise* starts for the remainder of the signal representing a *character*
+Looking at the signal in front of the first *character*, instead of trying to interpret high and low voltages as 1s and 0s like you would with a digital signal, it seemed a better approach to instead interpret a given period of roughly 5µs as being either "on" or "off", i.e., 1s or 0s. .
+
+You can see what I mean in the following image, where labels `A-B` represent a `1`, labels `C-D` represent a `0`, and label `E` is where the *noise* starts for the remainder of the signal representing a *character*
 
 ![First Character Encoded Data](../assets/img/logically/logically_5.png){: .mx-auto.d-block :}
 
@@ -46,7 +48,9 @@ From here, I stepped across the first couple characters and mapped out my interp
 | 4 | 111000111010 |
 | 5 | 111010010110 |
 
-One thing that stands out to me is that every *character* starts with `111`, and ends with `10`. I quickly scrolled through a few more *characters* to confirm that this pattern continued. I think it's a safe to assume that since there is no *change* in the data, there is no information to be gleaned from looking at these particular bits. They are likely just used as a sort of STOP and START signal for the encompassing bits. That leaves us with the following information:
+One thing that stands out to me is that every *character* starts with `111`, and ends with `10`. I quickly scrolled through a few more *characters* to confirm that this pattern continued. 
+
+I think it's a safe to assume that since there is no *change* in the data, there is no information to be gleaned from looking at these particular bits. They are likely just used as a sort of `STOP` and `START` signal for the encompassing bits. That leaves us with the following information:
 
 | Character | Bits |
 | :------: | :---: |
@@ -86,25 +90,24 @@ Notice *character* 3, and compare it to the bits of ASCII `A`. They're both pali
 | G | 1000111 | 4 | 1110001 | q |
 | - | 0101101 | 5 | 1011010 | Z |
 
-Now it almost jumps out. The *character* bits just need to be reversed to match! Here's the steps required shown on the first *character*, `F`.
+Still no luck on the ASCII, but the pattern between the target and current bits almost jumps out. The *character* bits just need to be reversed to match! 
+
+Here's the steps required shown on the first *character* block of data, to decode the signal to the ASCII character `F`.
 
 ![First Character Decoded Data ](../assets/img/logically/logically_6.png){: .mx-auto.d-block :}
 
 Stepping through the rest of the data and using some excel magic, the flag can be deciphered. 
 
-![Solution](../assets/img/logically/logically_7.png){: .mx-auto.d-block :}
-
 I input the data in Column B.
-
 Column C uses the following formula to flip the bits: 
 `=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)`
-
 Column D uses the following formula to reverse the bits: 
 `=TEXTJOIN("",1,MID(C2,{7,6,5,4,3,2,1},1))`
-
 Finally, Column E uses this formula to convert the binary to an ASCII character: 
 `=CHAR(BIN2DEC(D2))`
 
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
+
+![Solution](../assets/img/logically/logically_7.png){: .mx-auto.d-block :}
 
 You can download the excel file [here](../assets/files/logically_bonus.xlsx).
