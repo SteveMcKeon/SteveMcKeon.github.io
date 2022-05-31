@@ -39,7 +39,7 @@ Looking at the signal in front of the first *character*, instead of trying to in
 From here, I stepped across the first couple characters and mapped out my interpretations of 1s and 0s to see if anything stood out.
 
 | Character | Bits |
-| :------ | :---: |
+| :------: | :---: |
 | 1 | 111100111010 | 
 | 2 | 111110011010 |
 | 3 | 111011111010 |
@@ -49,7 +49,7 @@ From here, I stepped across the first couple characters and mapped out my interp
 One thing that stands out to me is that every *character* starts with `111`, and ends with `10`. I quickly scrolled through a few more *characters* to confirm that this pattern continued. I think it's a safe to assume that since there is no *change* in the data, there is no information to be gleaned from looking at these particular bits. They are likely just used as a sort of STOP and START signal for the encompassing bits. That leaves us with the following information:
 
 | Character | Bits |
-| :------ | :---: |
+| :------: | :---: |
 | 1 | 1001110 | 
 | 2 | 1100110 |
 | 3 | 0111110 |
@@ -59,7 +59,7 @@ One thing that stands out to me is that every *character* starts with `111`, and
 I'm getting a bit excited now, because we're left with 7 bits of information - the exact number of bits required to represent ASCII text! There's a problem though... these bits, in their current form, don't all correspond to printable characters.
 
 | Character | Bits | ASCII |
-| :------ | :---: | :---: |
+| :------: | :---: | :---: |
 | 1 | 1001110 | N |
 | 2 | 1100110 | f |
 | 3 | 0111110 | > |
@@ -69,7 +69,7 @@ I'm getting a bit excited now, because we're left with 7 bits of information - t
 The first flag in this challenge, as per the challenge statement, followed the form "FLAG-{ }". Maybe there's a way to correlate these first characters into "FLAG-".
 
 | Target | Bits | Character | Bits |
-| :------ | :---: | :------ | :---: |
+| :------: | :---: | :------: | :---: |
 | F | 1000110 | 1 | 1001110 | 
 | L | 1001100 | 2 | 1100110 |
 | A | 1000001 | 3 | 0111110 |
@@ -79,14 +79,14 @@ The first flag in this challenge, as per the challenge statement, followed the f
 Notice *character* 3, and compare it to the bits of ASCII `A`. They're both palindromes, but the bits are flipped. Let's follow this thread and flip the bits of our *characters* and see if they look better.
 
 | Target | Bits | Character | Bits | ASCII |
-| :------ | :---: | :------ | :---: | :---: |
+| :------: | :---: | :------: | :---: | :---: |
 | F | 1000110 | 1 | 0110001 | 1 |
 | L | 1001100 | 2 | 0011001 | `DC3` |
 | A | 1000001 | 3 | 1000001 | A |
 | G | 1000111 | 4 | 1110001 | q |
 | - | 0101101 | 5 | 1011010 | Z |
 
-Now it almost jumps out. The *character* bits just need to be reversed to match!
+Now it almost jumps out. The *character* bits just need to be reversed to match! Here's the steps required shown on the first *character*, `F`.
 
 ![First Character Decoded Data ](../assets/img/logically/logically_6.png){: .mx-auto.d-block :}
 
@@ -96,11 +96,14 @@ Stepping through the rest of the data and using some excel magic, the flag can b
 
 I input the data in Column B.
 
-Column C uses the following formula to flip the bits: `=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)`
+Column C uses the following formula to flip the bits: 
+`=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(B2,1,2),0,1),2,0)`
 
-Column D uses the following formula to reverse the bits: `=TEXTJOIN("",1,MID(C2,{7,6,5,4,3,2,1},1))`
+Column D uses the following formula to reverse the bits: 
+`=TEXTJOIN("",1,MID(C2,{7,6,5,4,3,2,1},1))`
 
-Finally, Column E uses this formula to convert the binary to an ASCII character: `=CHAR(BIN2DEC(D2))`
+Finally, Column E uses this formula to convert the binary to an ASCII character: 
+`=CHAR(BIN2DEC(D2))`
 
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
 
