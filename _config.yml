@@ -21,9 +21,9 @@ navbar-links:
 #    - EEE404: "EEE404"
 #    - EEE335: "EEE335"
   Resources:
-    - segfaults: "http://segfaults.net"
-#    - Good Coding Style: "http://mckeon.segfaults.net/Resources/coding-style/"
+    - Segfaults: "http://segfaults.net"
     - Online IDE: "https://repl.it"
+    - CyberChef: "https://gchq.github.io/CyberChef/"
 
 # --- Logo --- #
 
