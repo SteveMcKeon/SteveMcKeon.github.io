@@ -8,7 +8,7 @@ tags: [NorthSec2022, ctf, Portobello 53]
 
 Back to examining the UDP streams in the original packet capture, portobello53.pcapng. UDP stream 9 with communication between \[IPV6\]::23 and \[IPV6\]::100 has some pretty suspect keywords present in the data...
 
-![DNS stream 9](../assets/img/bargaining/bargaining1_1.png){: .mx-auto.d-block :}
+![DNS stream 9](/assets/img/bargaining/bargaining1_1.png){: .mx-auto.d-block :}
 
 As you can see, "SHELL:hostname" and "SHELL:whoami" stand out like sore thumbs. Let's investigate.
 
@@ -16,7 +16,7 @@ As you can see, "SHELL:hostname" and "SHELL:whoami" stand out like sore thumbs. 
 
 By looking at half of the stream with \[IPV6\]::100 as the sender, we can easily identify some more linux commands, but also our first flag!
 
-![DNS stream 9, first flag](../assets/img/bargaining/bargaining1_2.png){: .mx-auto.d-block :}
+![DNS stream 9, first flag](/assets/img/bargaining/bargaining1_2.png){: .mx-auto.d-block :}
  
 This is simple enough that we can just read and submit the 2 point flag right from here:  
 **flag-we_have_a_bad_case_of_ophiocordyceps_unilateralis**.
@@ -46,15 +46,15 @@ Searching for `sudo -u#-1 /bin/bash` on Google identifies "CVE-2019-14287", and 
 
 One obvious thing in the data is that this particular tunnel echos back the response from the shell commands likely as a form of acknowledgement of receipt, meaning, everything of interest is present in one side of the conversation. The `ls` and `cat` commands will likely return some interesting data, and sure enough there are large chunks of data being returned from the commands present in the data.
 
-![DNS stream 9, ls and cat data](../assets/img/bargaining/bargaining3_1.png){: .mx-auto.d-block :}
+![DNS stream 9, ls and cat data](/assets/img/bargaining/bargaining3_1.png){: .mx-auto.d-block :}
 
 The next thing of note is the encoding scheme in use. Here, take a look at an ASCII Table and see if it jumps out...
 
-![ASCII Table](../assets/img/bargaining/ASCII-Table.png){: .mx-auto.d-block :}
+![ASCII Table](/assets/img/bargaining/ASCII-Table.png){: .mx-auto.d-block :}
 
 Yeah! It looks like it is passing a string of hex values representing ASCII data. Let's copy and paste the data into sublime and use some RegEx-fu again to isolate the strings in question.
 
-![Isolated ASCII bytes](../assets/img/bargaining/bargaining3_2.png){: .mx-auto.d-block :}
+![Isolated ASCII bytes](/assets/img/bargaining/bargaining3_2.png){: .mx-auto.d-block :}
 
 From here, we should be able to just pass them to python to interpret and print properly. 
 
@@ -65,7 +65,7 @@ print(bytes.fromhex(bytestring.decode('utf-8')))
 
 The results:
 
-![Decoded ls and cat data](../assets/img/bargaining/bargaining3_3.png){: .mx-auto.d-block :}
+![Decoded ls and cat data](/assets/img/bargaining/bargaining3_3.png){: .mx-auto.d-block :}
 
 Which provides us the last flag in this category for another 2 points:  
 **flag-blockchaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiin**.
