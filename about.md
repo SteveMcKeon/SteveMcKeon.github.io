@@ -14,6 +14,8 @@ I work as an Aerospace Engineering (AERE) Officer for the Canadian Armed Forces 
 
 In 2019, I was fortunate enough to acquire a military faculty position at RMC, where I continue to instruct today at the undergraduate, graduate, and professional certificate level. I completed my Master's degree in 2021; my thesis project involved [developing a method to acquire digital forensic artifacts from real-time systems embedded on aircraft](https://github.com/SteveMcKeon/sleuthkit_custom).
 
+---
+
 ### What will you find here?
 
 * Capture the Flag event writeups,
