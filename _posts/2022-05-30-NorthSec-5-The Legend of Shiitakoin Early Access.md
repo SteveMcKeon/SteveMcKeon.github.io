@@ -3,7 +3,7 @@ layout: post
 title: The Legend of Shiitakoin Early Access
 subtitle: NorthSec2022 CTF Challenge Writeup
 thumbnail-img: /assets/img/northsec-icon.png
-tags: [NorthSec2022, ctf, The Legend of Shiitakoin Early Access]
+tags: [NorthSec2022, ctf, The Legend of Shiitakoin Early Access, reverse engineering]
 ---
 
 This challenge revolves around a custom N64 game created for NSec, and is of course mushroom themed. 
