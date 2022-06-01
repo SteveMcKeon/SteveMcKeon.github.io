@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Legend of Shiitakoin Early Access
-subtitle: NorthSec2022 CTF Challenge
+subtitle: NorthSec2022 CTF Challenge Writeup
 thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, ctf, The Legend of Shiitakoin Early Access]
 ---
