@@ -14,6 +14,7 @@ author: Stephen McKeon
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+  About: "about"
   Contact: "contact"
 #  Courses:
 #    - EEE243: "EEE243"
