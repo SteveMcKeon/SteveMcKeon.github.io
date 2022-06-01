@@ -10,21 +10,21 @@ tags: [NorthSec2022, Warmup2022, ctf, Logically]
 
 The first flag made use of the `D1` and `D2` digital channels - the bonus flag is hidden in the `A0` analog signal. 
 
-![Initial data](../assets/img/logically/logically_1.png){: .mx-auto.d-block :}
+![Initial data](/assets/img/logically/logically_1.png){: .mx-auto.d-block :}
 
 ## Initial Exploration
 
 Zooming out a little bit, I could count 43 discrete blocks of data in the signal. Odds are, each of these blocks represents a character of the flag we're after.
 
-![Analog Characters](../assets/img/logically/logically_2.png){: .mx-auto.d-block :}
+![Analog Characters](/assets/img/logically/logically_2.png){: .mx-auto.d-block :}
 
 Based on the first image, though, I knew the data wasn't homogeneous across the entirety of any given chunk. At the start of any given... - let's just refer to these blocks of data as *characters*, since that's the assumption I'm working off of - there are distinct changes in the signal, followed by a relatively very long signal of what looks to be *noise*. Here's the first *character* to show you what I mean.
 
-![First Character Signal](../assets/img/logically/logically_3.png){: .mx-auto.d-block :}
+![First Character Signal](/assets/img/logically/logically_3.png){: .mx-auto.d-block :}
 
 I use the word *noise* very intentionally. I tried to apply various analyzers to this area (I tried hard, for like 6+ hours), but even just looking at it, it is too homogeneous. You could attempt to zoom **WAY** in and correlate the fluctuations in voltage to 1s and 0s, but aside from a periodic increase in frequency, which is sort of visible in the image below, I couldn't imagine any relevant data being hidden in this noise.
 
-![Periodic increase in frequency](../assets/img/logically/logically_4.png){: .mx-auto.d-block :}
+![Periodic increase in frequency](/assets/img/logically/logically_4.png){: .mx-auto.d-block :}
 
 Instead, I chose to focus my efforts on the easily identifiable changes in signal at the start of each *character*. Knowing that the first flag of this challenge was encoded using UART, I thought maybe this data needed to be converted to a digital signal and decoded the same way. I tried various methods to analyze and convert this to a digital signal, but wasn't having much luck.
 
@@ -36,9 +36,9 @@ Looking at the signal in front of the first *character*, instead of trying to in
 
 You can see what I mean in the following image, where labels `A-B` represent a `1`, labels `C-D` represent a `0`, and label `E` is where the *noise* starts for the remainder of the signal representing a *character*.
 
-![First Character Encoded Data](../assets/img/logically/logically_5.png){: .mx-auto.d-block :}
+![First Character Encoded Data](/assets/img/logically/logically_5.png){: .mx-auto.d-block :}
 
-From here, I stepped across the first couple characters and mapped out my interpretations of 1s and 0s to see if anything stood out.
+From here, I stepped across the first couple *characters* and mapped out my interpretations of 1s and 0s to see if anything stood out.
 
 | Character | Bits |
 | :------: | :---: |
@@ -96,11 +96,11 @@ Still no luck on the ASCII, but the pattern between the target and current bits 
 
 Here's the steps required shown on the first *character* block of data, to decode the signal to the ASCII character `F`.
 
-![First Character Decoded Data ](../assets/img/logically/logically_6.png){: .mx-auto.d-block :}
+![First Character Decoded Data ](/assets/img/logically/logically_6.png){: .mx-auto.d-block :}
 
 Stepping through the rest of the data and using some excel magic, the flag can be deciphered. 
 
-![Solution](../assets/img/logically/logically_7.png){: .mx-auto.d-block :}
+![Solution](/assets/img/logically/logically_7.png){: .mx-auto.d-block :}
 
 I input the data in Column B.  
 Column C uses the following formula to flip the bits:  
@@ -112,8 +112,8 @@ Finally, Column E uses this formula to convert the binary to an ASCII character:
 
 The final flag: **FLAG-{2dc87458-9582-11ec-91d6-dbcd4012e593}**.
 
-You can download the excel file [here](../assets/files/logically_bonus.xlsx).
+You can download the excel file [here](/assets/files/logically_bonus.xlsx).
 
-Now, this encoding very probably corresponds to some known scheme. If I had to guess, it's likely reverse encoded something with multiple stop bits, where a lack of signal is 1 and a positive signal is 0. This corresponds to the need to *flip* and *reverse* the bits in my manual solution. 
+Now, this encoding very probably corresponds to some known scheme. If I had to guess, it's likely reverse encoded *something* with multiple stop bits, where a lack of signal is 1 and a positive signal is 0. This corresponds to the need to *flip* and *reverse* the bits in my manual solution. 
 
 I could explore further and try to get some software to analyze and decode it properly, butttt it only took 20 minutes to throw it into excel and solve it that way. I'm a big fan of simple solutions, whenever possible. :)
