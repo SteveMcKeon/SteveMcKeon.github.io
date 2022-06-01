@@ -70,7 +70,9 @@ I'm getting a bit excited now, because we're left with 7 bits of information - t
 | 4 | 0001110 | `SO` |
 | 5 | 0100101 | % |
 
-The first flag in this challenge, as per the challenge statement, followed the form "FLAG-{ }". Maybe there's a way to correlate these first characters into "FLAG-".
+The first flag in this challenge, as per the challenge statement, followed the form "FLAG-{ }". Maybe there's a way to correlate these first characters with "FLAG-". 
+
+The idea is to figure out some sort of transform or encoding that is taking the current determined bits from my assumed *characters* and turning them into the bits representing the characters in the string "FLAG-".
 
 | Target | Bits | Character | Bits |
 | :------: | :---: | :------: | :---: |
