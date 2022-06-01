@@ -9,7 +9,7 @@ CNO Instructor, Directorate Cyber Operations Force Development (D Cyber Ops FD) 
 ### Coordinates 
 Capt Stephen McKeon  
 Sawyer 4106  
-stephen@mckeon.ca
+[stephen@mckeon.ca](mailto:stephen@mckeon.ca?subject=Hello from mckeon.ca)
 
 
 Department of Electrical and Computer Engineering  
