@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logically - Bonus Flag
-subtitle: NorthSec2022 CTF Warmup Challenge
+subtitle: NorthSec2022 CTF Warmup Challenge Writeup
 thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, Warmup2022, ctf, Logically]
 ---
