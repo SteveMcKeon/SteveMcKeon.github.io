@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Coordinates
+title: Contact Me
 subtitle: Capt Stephen McKeon, RMC, BEng, MASc
 ---
 
