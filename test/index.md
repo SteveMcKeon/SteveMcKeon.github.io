@@ -20,6 +20,7 @@ All important course information will be published on this web site.
 
 I have an open-door policy; my office is in room S4106. You can drop by any time, but it's probably best to arrange a meeting in advance.
 
+![Initial data](/assets/img/logically/logically_1.png){: .mx-auto.d-block :}
 
 ## Structure
 
