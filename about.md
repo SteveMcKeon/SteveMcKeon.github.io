@@ -6,7 +6,7 @@ subtitle: Capt Stephen McKeon, RMC, BEng, MASc
 
 ### Who am I? 
 
-[me](assets/img/BW.png) [me](assets/img/RGB.png)
+![me](assets/img/BW.png) ![me](assets/img/RGB.png)
 
 My name is Stephen McKeon and I've been dabbling with computers since my teenage years. I've always had a fascination with computers and the capabilities they provide, starting with torrents and cracked games so I wouldn't need a physical disk to play Warcraft or Age of Empires. In the early years, I infected, broke, and fixed my family's computer more times than I can count. It wasn't until 2012, while attending University at the Royal Military College (RMC) of Canada where I took my first programming course, that I began my true journey of  understanding and love of technology. I subsequently studied Computer Engineering and graduated from the Regular Officer Training Program with a B.Eng in 2016.
 
