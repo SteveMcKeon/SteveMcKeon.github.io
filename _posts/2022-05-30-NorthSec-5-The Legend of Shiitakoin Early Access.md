@@ -12,23 +12,23 @@ The challenge instructions provide a few files, including Project64.exe, a Ninte
 
 ## Initial Exploration
 
-![Initial Screen](../assets/img/N64/N64_1.png){: .mx-auto.d-block :}
+![Initial Screen](/assets/img/N64/N64_1.png){: .mx-auto.d-block :}
 
 By exploring the options, I found the key mapping from keyboard to an N64 controller, so I would know how to control my potential character or otherwise play the game.
 
-![Controls](../assets/img/N64/N64_2.png){: .mx-auto.d-block :}
+![Controls](/assets/img/N64/N64_2.png){: .mx-auto.d-block :}
 
 By pressing start (enter), I could cycle between the loading screen and two *stages*.
 
 The first stage accepts 4 hexadecimal numbers as input. I tried a few obvious options like `0xDEADBEEF`, and the game would print `INCORRECT` overlayed with the inputs. 
 
-![Stage 1](../assets/img/N64/N64_3.png){: .mx-auto.d-block :}
+![Stage 1](/assets/img/N64/N64_3.png){: .mx-auto.d-block :}
 
 Presumably, if we enter the right inputs, this will print a flag to the screen instead of `INCORRECT`. 
 
 Similarly, the second stage had a little mushroom you could move around which would update x,y coordinates on the screen. The goal, I guess, is to input at certain coordinates to print the flag to the screen.
 
-![Stage 2](../assets/img/N64/N64_4.png){: .mx-auto.d-block :}
+![Stage 2](/assets/img/N64/N64_4.png){: .mx-auto.d-block :}
 
 ## Approach
 
@@ -38,17 +38,17 @@ My next thought was that maybe I could attach a debugger and try to skip the ins
 
 With a bit of googling, I realized Project64 has a [debugger](https://hack64.net/docs/pj64d/) that I could work with, so started here. 
 
-![Debugger](../assets/img/N64/N64_5.png){: .mx-auto.d-block :}
+![Debugger](/assets/img/N64/N64_5.png){: .mx-auto.d-block :}
 
 It was pretty straight forward to setup, but I had a problem. I still needed to figure out where to set breakpoints and where the interesting code was. 
 
 I like to use [Ghidra](https://ghidra-sre.org/) for this sort of thing, though it doesn't know how to interpret `.n64` file types by default. It didn't take long to find [zeroKila's](https://github.com/zeroKilo/N64LoaderWV) loader module, though. After following the instructions to add his loader as an extension to Ghidra, opening `legend_of_shiitakoin.n64`, and analyzing the file with the default settings, I could start to explore the code.
 
-![Ghidra with N64 ROM](../assets/img/N64/N64_6.png){: .mx-auto.d-block :}
+![Ghidra with N64 ROM](/assets/img/N64/N64_6.png){: .mx-auto.d-block :}
 
 My current plan is still just to skip the input validation and hopefully print the flag, so I need to find where that print occurs. I started by searching for strings in the file...
 
-![Ghidra Strings](../assets/img/N64/N64_7.png){: .mx-auto.d-block :}
+![Ghidra Strings](/assets/img/N64/N64_7.png){: .mx-auto.d-block :}
 
 ## Stage1
 
@@ -76,11 +76,11 @@ if (lVar1 != 1) {
 
 All I had to do was replace the V0 register that stores the returned value from the function call with a 1, and the *Branch if Equal* (BEQ) should trigger, shown in the debugger:
 
-![Trigger BEQ](../assets/img/N64/N64_8.png){: .mx-auto.d-block :}
+![Trigger BEQ](/assets/img/N64/N64_8.png){: .mx-auto.d-block :}
 
 Success, I printed *a* flag!
 
-![Fake Flag](../assets/img/N64/N64_9.png){: .mx-auto.d-block :}
+![Fake Flag](/assets/img/N64/N64_9.png){: .mx-auto.d-block :}
 
 ## The way they wanted you to do it
 
@@ -111,7 +111,7 @@ return uVar1;
 
 If we examine the 4 bytes starting at memory address `0x800570e0` which correspond to the 4 main variables used in this function, it's obvious that they are our 4 inputs.
 
-![Stage1 Memory](../assets/img/N64/N64_10.png){: .mx-auto.d-block :}
+![Stage1 Memory](/assets/img/N64/N64_10.png){: .mx-auto.d-block :}
 
 All we have to do is choose data that passes all these if statements such that the code reaches the line to set `uVar1 = 1`. In fact, most of the checks make that exceedingly simple:
 
@@ -126,7 +126,7 @@ DAT_800570e3 == 0x3f  //var3 must be 0x3f
 
 Inputting the determined values into the game...
 
-![Stage1 Flag](../assets/img/N64/N64_11.png){: .mx-auto.d-block :}
+![Stage1 Flag](/assets/img/N64/N64_11.png){: .mx-auto.d-block :}
 
 ...and we get our flag! For a solid 4 points:
 **FLAG-HZQCFVZXSRSFEAUBSXA**.
@@ -224,14 +224,14 @@ Some of the if statements, when true, will result in a returnVar that we **don't
 
 A quick table to summarize our findings, sorted by MSB:
 
-![Stage2 Table Summary](../assets/img/N64/N64_table.png){: .mx-auto.d-block :}
+![Stage2 Table Summary](/assets/img/N64/N64_table.png){: .mx-auto.d-block :}
 
 
 ## Flag 2
 
 Taking the bits from the right two columns, the two input values `x` and `y` should be `0xa3` and `0x4e`.
 
-![Stage2 Flag](../assets/img/N64/N64_12.png){: .mx-auto.d-block :}
+![Stage2 Flag](/assets/img/N64/N64_12.png){: .mx-auto.d-block :}
 
 With 3 minutes to spare before the end of the CTF, our final flag for 4 points:  
 **FLAG-HZQCFXWFJMPTJSMCMFMB**.
