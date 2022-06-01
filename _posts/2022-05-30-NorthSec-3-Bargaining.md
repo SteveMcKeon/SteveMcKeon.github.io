@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Portobello 53 - Bargaining
-subtitle: NorthSec2022 CTF Challenge
+subtitle: NorthSec2022 CTF Challenge Writeup
 thumbnail-img: /assets/img/northsec-icon.png
 tags: [NorthSec2022, ctf, Portobello 53]
 ---
