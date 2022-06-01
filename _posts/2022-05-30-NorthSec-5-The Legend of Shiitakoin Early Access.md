@@ -135,7 +135,7 @@ Inputting the determined values into the game...
 
 At this point, there were 45 minutes left until the end of the competition. I wasn't hopeful that I could finish this next flag in time, but doggonnit I was ganna try!
 
-Similar to before, I found the next time the string "FLAG-%s%s%s%s" was printed, which was shortly after the string "stage03.c". Apparently there is no stage02. Whatever.
+Similar to before, I found the next time the string "FLAG-%s%s%s%s" was printed, which was shortly before the string "stage03.c". Apparently there is no stage02. Whatever.
 
 Following the xref back to a function at `0x80028410`, I stepped through with the debugger by setting some strategic breakpoints until I eventually found a function call at `0x80028b84` that seemed to serve the same purpose as with the previous flag - if it returns 1, then instead of printing `INCOMPLETE` to the screen, some new code can be reached.
 
