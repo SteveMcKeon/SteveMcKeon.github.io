@@ -5,8 +5,8 @@ title: Test File
 
 This is a demo.
 
-|No Branch|Yes Branch|No Branch|Yes Branch|input0 bits|input1 bits|
-|---|---|---|---|---|---|
+|Don't Branch|Take Branch|Don't Branch|Take Branch|input0 bits|input1 bits|
+|:----:|:----:|:----:|:----:|:----:|:----:|
 |(input0 & 0x80) == 0| | |(input1 & 0x80) == 0|1|0|
 | |(input0 & 0x40) == 0|(input1 & 0x40) == 0| |0|1|
 |(input0 & 0x20) == 0| | |(input1 & 0x20) == 0|1|0|
