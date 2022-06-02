@@ -223,29 +223,31 @@ return returnVar;
 Some of the if statements, when true, will result in a returnVar that we **don't** want, others are branches we **do** want to take.
 
 Two quick tables to summarize our findings, sorted by MSB:  
-**input0 / X coordinates:**
+**input0 / X coordinates:**  
+
 |Don't Branch / False|Take Branch / True|input0 bits|
 |:----:|:----:|:----:|
-|(input0 & 0x80) == 0| |1.......|
-| |(input0 & 0x40) == 0|.0......|
-|(input0 & 0x20) == 0| |..1.....|
-| |(input0 & 0x10) == 0|...0....|
-| |(input0 & 8) == 0|....0...|
-| |(input0 & 4) == 0|.....0..|
-|(input0 & 2) == 0| |......1.|
-|(input0 & 1) == 0| |.......1|
+|(input0 & 0x80) == 0| |1|
+| |(input0 & 0x40) == 0|0|
+|(input0 & 0x20) == 0| |1|
+| |(input0 & 0x10) == 0|0|
+| |(input0 & 8) == 0|0|
+| |(input0 & 4) == 0|0|
+|(input0 & 2) == 0| |1|
+|(input0 & 1) == 0| |1|
 
-**input1 / Y coordinates:**
+**input1 / Y coordinates:**  
+
 |Don't Branch / False|Take Branch / True|input1 bits|
 |:----:|:----:|:----:|
-| |(input1 & 0x80) == 0|0.......|
-|(input1 & 0x40) == 0| |.1......|
-| |(input1 & 0x20) == 0|..0.....|
-| |(input1 & 0x10) == 0|...0....|
-|(input1 & 8) == 0| |....1...|
-|(input1 & 4) == 0| |.....1..|
-|(input1 & 2) == 0| |......1.|
-| |(input1 & 1) == 0|.......0|
+| |(input1 & 0x80) == 0|0|
+|(input1 & 0x40) == 0| |1|
+| |(input1 & 0x20) == 0|0|
+| |(input1 & 0x10) == 0|0|
+|(input1 & 8) == 0| |1|
+|(input1 & 4) == 0| |1|
+|(input1 & 2) == 0| |1|
+| |(input1 & 1) == 0|0|
 
 ## Flag 2
 
