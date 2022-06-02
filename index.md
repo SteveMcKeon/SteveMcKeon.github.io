@@ -4,4 +4,4 @@ title: Stephen McKeon
 subtitle: Royal Military College of Canada
 use-site-title: true
 ---
-Department of Electrical and Computer Engineering
+Department of Electrical and Computer Engineering {: .page-subheading :}
