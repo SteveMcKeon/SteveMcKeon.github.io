@@ -19,5 +19,5 @@ In 2019, I was fortunate enough to acquire a military faculty position at RMC, w
 ### What will you find here?
 
 * Capture the Flag event writeups,
-* Outwardly random musings and reflections, and
+* Random musings and reflections, and
 * A place to gather my thoughts and keep track of accomplishments.
