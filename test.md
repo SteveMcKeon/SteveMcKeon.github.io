@@ -5,6 +5,17 @@ title: Test File
 
 This is a demo.
 
+|No Branch|Yes Branch|No Branch|Yes Branch|input0 bits|input1 bits|
+|---|---|---|---|---|---|
+|(input0 & 0x80) == 0| | |(input1 & 0x80) == 0|1|0|
+| |(input0 & 0x40) == 0|(input1 & 0x40) == 0| |0|1|
+|(input0 & 0x20) == 0| | |(input1 & 0x20) == 0|1|0|
+| |(input0 & 0x10) == 0| |(input1 & 0x10) == 0|0|0|
+| |(input0 & 8) == 0|(input1 & 8) == 0| |0|1|
+| |(input0 & 4) == 0|(input1 & 4) == 0| |0|1|
+|(input0 & 2) == 0| |(input1 & 2) == 0| |1|1|
+|(input0 & 1) == 0| | |(input1 & 1) == 0|1|0|
+
 **Here is some bold text**
 
 ## Here is a secondary heading
