@@ -21,6 +21,9 @@ By looking at half of the stream with \[IPV6\]::100 as the sender, we can easily
 This is simple enough that we can just read and submit the 2 point flag right from here:  
 **flag-we_have_a_bad_case_of_ophiocordyceps_unilateralis**.
 
+{: .box-note}
+**Side note:** that flag name is hilarious! Google "ophiocordyceps unilateralis".
+
 ## Bargaining 2/3
 
 I actually missed the second flag for quite some time - as it turns out, each *emotion* category of the portobello stream had a forum post on the NSec challenge board. For the Bargaining category, it  indicated that the second flag is the MD5 hash of the CVE that identifies the vulnerability exploited in this UDP stream in the format "flag-bargaining-*MD5Hash*".
