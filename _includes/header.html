@@ -36,6 +36,14 @@
               <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
             {% endif %}
           {% endif %}
+          {% if page.subtitle2 %}
+            {% if include.type == "page" %}
+              <hr class="small">
+              <span class="{{ include.type }}-subheading">{{ page.subtitle2 | strip_html }}</span>
+            {% else %}
+              <h2 class="{{ include.type }}-subheading">{{ page.subtitle2 | strip_html }}</h2>
+            {% endif %}
+          {% endif %}
 
           {% if include.type == "post" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
@@ -70,7 +78,15 @@
               <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
             {% endif %}
           {% endif %}
-
+          {% if page.subtitle2 %}
+            {% if include.type == "page" %}
+              <hr class="small">
+              <span class="{{ include.type }}-subheading">{{ page.subtitle2 | strip_html }}</span>
+            {% else %}
+              <h2 class="{{ include.type }}-subheading">{{ page.subtitle2 | strip_html }}</h2>
+            {% endif %}
+          {% endif %}
+          
           {% if include.type == "post" %}
             <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
             {% if page.last-updated %}
