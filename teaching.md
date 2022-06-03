@@ -39,6 +39,8 @@ Third-year undergraduate course covering UML diagrams and OO Design. Students co
 
 Second-year undergraduate course involving using mobile robots as an application area to explore software design. This course teaches the fundamentals of programming using `C`, enabling the students to explore various algorithms, the basics of input/output, foundational computer concepts like the memory model, cross compiling to a different architecture, as well as debugging and testing their code. Students completing the course are able to design significant software programs and components in the presence of other software and hardware subsystems. Other topics include: effective decomposition of software into modules; modular programming and design techniques; structured programming; the execution model for software; the software build cycle; basic data structures; the use of third-party components and underlying operating system support; rudimentary control of physical systems through high-level interfaces to digital input/output channels; and analog/digital and digital/analog converters.
 
+---
+
 ### Graduate Courses (Teaching assistant)
 
 #### EE595: Cyber Threat and Attack Techniques
@@ -46,6 +48,8 @@ Second-year undergraduate course involving using mobile robots as an application
 **Semesters:** Fall 2020, Fall 2021
 
 Those operating in the cyber domain that is tasked with the defence of networks and computer systems must have a sound understanding of the threats that they face and of the techniques used by their adversaries; this course discusses the fundamentals of Cyber threats and attack techniques, with a heavy focus on practical applications. Topics include current cyber threat categories and general capabilities; attack techniques including password cracking, buffer and heap overflows, IP and DNS spoofing, viruses and worms, backdoors and remote access tools, key loggers, tunnelling and covert channels, SQL injection and cross-site scripting; advanced evasion techniques such as polymorphic code and rootkits. The course also introduces malware construction including assembly level program flow control and return oriented programming.
+
+---
 
 ### Professional Certificate Courses
 
