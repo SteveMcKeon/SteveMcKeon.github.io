@@ -6,13 +6,13 @@ title: Teaching Experience
 ### Undergraduate Courses
 
 #### GEF404: Cyber Defence
-**Semesters:** Winter 2019, Winter 2020, Winter 2021
+**Semesters:** Winter 2019, Winter 2020, Winter 2021  
 Enseigné en français.
 
 Fourth-year combined English & French undergraduate course covering the core concepts behind cyber defence. In this course, students investigate the cyber threat environment, network attack, the design of network perimeter defence, and defence-in-depth. Students completing this course are able to design a defensive computer network architecture and understand the network cyber operations environment. Topics include: firewall design; deployment of intrusion detection and preventions systems; design and implementation of security policies; and identification and authentication. The capstone activity is a two-week cyber defence exercise at term-end dubbed CyberX, organized and run by RMC, involving military college teams from Canada and the United States, with participation from the National Security Agency (NSA) performing red team activities, and includes a simulated kinetic environment provided from Rome Laboratory (US Air Force Research Laboratory).
 
 #### GEF466: Distributed Systems
-**Semesters:** Fall 2021
+**Semesters:** Fall 2021  
 Enseigné en français.
 
 Fourth-year undergraduate course covering communication between distributed applications, including security, reliability, and efficiency. Students completing this course understand the key technologies used in distributed systems, and are able to design and implement them. In the laboratory, students build distributed systems using sockets, remote invocation, and web-based technologies. Topics include: principles and characteristics of distributed systems; protocol design; client/server and peer-to-peer systems; distributed objects; time services; distributed transactions and replicas; concurrency control; the two-phase commit protocol; name services; network security threat models; cryptographic key distribution; authentication and signature; and common internet services and protocols.
@@ -59,4 +59,3 @@ I developed and taught the Security Architecture module, which covers topics on 
 The primary objective of this course is to provide students with an introduction to computer networks and to the security issues surrounding computer networks. The philosophy throughout the course is to provide a high ratio of hands-on practice to class-based learning. The course is designed to provide the foundation material necessary before attending more specialized training in computer security. 
 
 I taught the Operating System Security module. Lecture topics include an introduction to operating systems, basic Windows architecture, vulnerabilities and defences, basic UNIX architecture, vulnerabilities and defences, and file systems.
-
