@@ -16,10 +16,10 @@ author: Stephen McKeon
 navbar-links:
   About: "about"
   Contact: "contact"
-#  Courses:
-#    - EEE243: "EEE243"
-#    - EEE404: "EEE404"
-#    - EEE335: "EEE335"
+  Experience:
+    - Teaching: "teaching"
+#     - EEE404: "EEE404"
+#     - EEE335: "EEE335"
   Resources:
     - Segfaults: "http://segfaults.net"
     - Online IDE: "https://repl.it"
