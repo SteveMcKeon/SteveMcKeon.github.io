@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Teaching Experience
+description: My teaching experience
 ---
 
 <!-- - [Undergraduate Courses](#undergraduate)
