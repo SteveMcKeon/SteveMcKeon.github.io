@@ -92,7 +92,7 @@ Notice *character* 3, and compare it to the bits of ASCII `A`. They're both pali
 | G | 1000111 | 4 | 1110001 | q |
 | - | 0101101 | 5 | 1011010 | Z |
 
-Still no luck on the ASCII, but the pattern between the target and current bits almost jumps out. The *character* bits just need to be reversed to match! 
+Still no luck on the ASCII, but the pattern between the target and current bits almost jumps out. The bits are now like a mirror image... The *character* bits just need to be reversed to match! 
 
 Here's the steps required shown on the first *character* block of data, to decode the signal to the ASCII character `F`.
 
