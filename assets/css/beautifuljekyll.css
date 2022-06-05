@@ -4,6 +4,29 @@ layout: null
 
 @import url("pygment_highlights.css");
 
+/* --- Custom --- */
+
+#toc-wrapper {
+  border-left: 1px solid rgba(158, 158, 158, 0.17);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+  transition: top 0.2s ease-in-out;
+  animation: fade-up .8s;
+  &.topbar-down {
+    top: 6rem;
+  }
+  > span {
+    @include panel-label;
+  }
+}
+
+#toc li>a {
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 /* --- General --- */
 
 html {
