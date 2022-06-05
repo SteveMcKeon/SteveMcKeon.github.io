@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Teaching Experience
+toc: true
 description: My teaching experience
 ---
 
