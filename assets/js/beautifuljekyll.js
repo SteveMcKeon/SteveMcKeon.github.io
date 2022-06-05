@@ -10,6 +10,27 @@ var BeautifulJekyllJS = {
 
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
+        var st = $(this).scrollTop();
+        /* Make sure they scroll more than delta */
+        if (Math.abs(lastScrollTop - st) <= delta) {
+          return;
+        }
+        if (st > lastScrollTop && st > topbarHeight) {
+          /* Scroll Down */
+          $("#topbar-wrapper").removeClass("topbar-down").addClass("topbar-up");
+          if ($("#toc-wrapper").length > 0) {
+            $("#toc-wrapper").removeClass("topbar-down");
+          }
+        } else {
+          /* Scroll Up */
+          if (st + $(window).height() < $(document).height()) {
+            $("#topbar-wrapper").removeClass("topbar-up").addClass("topbar-down");
+            if ($("#toc-wrapper").length > 0) {
+              $("#toc-wrapper").addClass("topbar-down");
+            }
+          }
+        }
+        lastScrollTop = st;
         if ($(".navbar").offset().top > 50) {
             $(".navbar").addClass("top-nav-short");
         } else {
