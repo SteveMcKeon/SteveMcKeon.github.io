@@ -85,11 +85,6 @@
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
-
-  {% if page.toc %}
-    <link rel="preload" as="style" href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url }}" />
-  {% endif %}
   
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}">
