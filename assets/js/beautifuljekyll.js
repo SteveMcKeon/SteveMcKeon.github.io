@@ -6,7 +6,10 @@ var BeautifulJekyllJS = {
   numImgs : null,
   
   init : function() {
+    var didScroll;
     var lastScrollTop = 0;
+    var delta = 5;
+    var topbarHeight = 50;
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
@@ -32,7 +35,7 @@ var BeautifulJekyllJS = {
           }
         }
         lastScrollTop = st;
-        if ($(".navbar").offset().top > 50) {
+        if ($(".navbar").offset().top > topbarHeight) {
             $(".navbar").addClass("top-nav-short");
         } else {
             $(".navbar").removeClass("top-nav-short");
