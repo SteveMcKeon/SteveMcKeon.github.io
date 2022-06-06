@@ -28,6 +28,11 @@ layout: base
       {% include comments.html %}
     </div>
     {% if page.toc %}
+      <link
+        rel="stylesheet"
+        href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+      />
+      <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
       <div id="panel-wrapper" class="col">
         <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
           <span class="pl-3 pt-2 mb-2">
