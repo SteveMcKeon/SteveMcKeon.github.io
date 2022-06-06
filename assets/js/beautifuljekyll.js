@@ -4,7 +4,8 @@ var BeautifulJekyllJS = {
 
   bigImgEl : null,
   numImgs : null,
-
+  var lastScrollTop = 0;
+  
   init : function() {
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
