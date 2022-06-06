@@ -4,9 +4,9 @@ var BeautifulJekyllJS = {
 
   bigImgEl : null,
   numImgs : null,
-  var lastScrollTop = 0;
   
   init : function() {
+    var lastScrollTop = 0;
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
