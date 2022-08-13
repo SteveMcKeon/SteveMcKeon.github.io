@@ -70,7 +70,7 @@ I developed and taught the Security Architecture module, which covers topics on 
 
 
 #### Short Course in Networks and Security (SCINS) <a name="SCINS"></a>
-**Serials:** Fall 2021, Winter 2021
+**Serials:** Fall 2021, Winter 2022
 
 The primary objective of this course is to provide students with an introduction to computer networks and to the security issues surrounding computer networks. The philosophy throughout the course is to provide a high ratio of hands-on practice to class-based learning. The course is designed to provide the foundation material necessary before attending more specialized training in computer security. 
 
