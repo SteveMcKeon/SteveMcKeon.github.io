@@ -62,7 +62,7 @@ Those operating in the cyber domain that is tasked with the defence of networks 
 ### Professional Certificate Courses <a name="professional"></a>
 
 #### Security of Platform / Operational Technology Systems (SPOTS) <a name="SPOTS"></a>
-**Serials:** Fall 2022, Winter 2023 (Only 2 serials to date)
+**Serials:** Fall 2021, Winter 2023 (Only 2 serials to date)
 
 This course provides a comprehensive introduction to cybersecurity issues unique to platform and operational technology systems. The course is engineering focused and includes advanced technical concepts within computer security. This course prepares students to guide and/or provide advice to Weapons System Managers (WSMs) and/or Project Management Offices (PMOs) on platform/OT cybersecurity matters such as security threat and vulnerability assessments, security architecture and protection measures, and defensive cyber operation support.
 
