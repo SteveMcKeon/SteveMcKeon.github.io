@@ -14,12 +14,10 @@ author: Stephen McKeon
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "about"
-  Contact: "contact"
+  About: "https://www.mckeon.ca/about/"
+  Contact: "https://www.mckeon.ca/contact"
   Experience:
-    - Teaching: "teaching"
-#     - EEE404: "EEE404"
-#     - EEE335: "EEE335"
+    - Teaching: "https://www.mckeon.ca/teaching/"
   Resources:
     - Segfaults: "http://segfaults.net"
     - Online IDE: "https://repl.it"
