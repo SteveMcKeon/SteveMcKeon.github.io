@@ -24,12 +24,12 @@ navbar-links:
     - CyberChef: "https://gchq.github.io/CyberChef/"
 
 url: https://mckeon.ca/
-baseurl: https://mckeon.ca/
+baseurl: /
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://github.com/SteveMcKeon/SteveMcKeon.github.io/tree/master/assets/img/ece_logo.png"
+avatar: "assets/img/ece_logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
