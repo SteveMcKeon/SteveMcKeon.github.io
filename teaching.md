@@ -22,7 +22,7 @@ description: My teaching experience
 ### Undergraduate Courses <a name="undergraduate"></a>
 
 #### GEF404: Cyber Defence <a name="GEF404"></a>
-**Semesters:** Winter 2019, Winter 2020, Winter 2021, Winter 2022
+**Semesters:** Winter 2020, Winter 2021, Winter 2022, Winter 2023 (English)
 Enseigné en français.
 
 Fourth-year combined English & French undergraduate course covering the core concepts behind cyber defence. In this course, students investigate the cyber threat environment, network attack, the design of network perimeter defence, and defence-in-depth. Students completing this course are able to design a defensive computer network architecture and understand the network cyber operations environment. Topics include: firewall design; deployment of intrusion detection and preventions systems; design and implementation of security policies; and identification and authentication. The capstone activity is a two-week cyber defence exercise at term-end dubbed CyberX, organized and run by RMC, involving military college teams from Canada and the United States, with participation from the National Security Agency (NSA) performing red team activities, and includes a simulated kinetic environment provided from Rome Laboratory (US Air Force Research Laboratory).
@@ -34,7 +34,7 @@ Enseigné en français.
 Fourth-year undergraduate course covering communication between distributed applications, including security, reliability, and efficiency. Students completing this course understand the key technologies used in distributed systems, and are able to design and implement them. In the laboratory, students build distributed systems using sockets, remote invocation, and web-based technologies. Topics include: principles and characteristics of distributed systems; protocol design; client/server and peer-to-peer systems; distributed objects; time services; distributed transactions and replicas; concurrency control; the two-phase commit protocol; name services; network security threat models; cryptographic key distribution; authentication and signature; and common internet services and protocols.
 
 #### EEE335: Principles of Operating Systems <a name="EEE335"></a>
-**Semesters:** Winter 2019
+**Semesters:** Winter 2020
 
 Third-year undergraduate course covering the principles of operating systems. This course explores the internal workings of operating systems such as the Windows and UNIX family of OS, including modes of operation protected by hardware (kernel modes). Students completing this course understand the design of operating systems used in modern computing systems, including the management of shared hardware and software resources. Students implement operating systems concepts in programming laboratories. Topics include: the process; concurrent processes; inter-process communication; deadlock; scheduling; input/output; file systems; file servers; memory management; and virtual storage management.
 
