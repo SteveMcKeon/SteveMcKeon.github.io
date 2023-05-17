@@ -53,7 +53,7 @@ Second-year undergraduate course involving using mobile robots as an application
 ### Graduate Courses (Teaching assistant) <a name="graduate"></a>
 
 #### EE595: Cyber Threat and Attack Techniques <a name="EE595"></a>
-**Semesters:** Fall 2020, Fall 2021, Fall 2022
+**Semesters:** Fall 2019, Fall 2020, Fall 2021
 
 Those operating in the cyber domain that is tasked with the defence of networks and computer systems must have a sound understanding of the threats that they face and of the techniques used by their adversaries; this course discusses the fundamentals of Cyber threats and attack techniques, with a heavy focus on practical applications. Topics include current cyber threat categories and general capabilities; attack techniques including password cracking, buffer and heap overflows, IP and DNS spoofing, viruses and worms, backdoors and remote access tools, key loggers, tunnelling and covert channels, SQL injection and cross-site scripting; advanced evasion techniques such as polymorphic code and rootkits. The course also introduces malware construction including assembly level program flow control and return oriented programming.
 
