@@ -34,13 +34,13 @@ description: Exercises I have participated in with scoring highlights.
 #### ImaginaryCTF (May 2023)
 - **Placement:** 3rd place out of 148 individuals.
 
-#### Hackfest 15 Pro CTF (October 2023)
-- **Placement:** 1st place out of 12 teams.
-- **Team:** Spetsnaz.
-
 #### Parsons AFCEA TechNet (August 2023)
 - **Placement:** 4th place out of 38 teams.
 - **Team:** Segfaults.
+
+#### Hackfest 15 Pro CTF (October 2023)
+- **Placement:** 1st place out of 12 teams.
+- **Team:** Spetsnaz.
 
 #### ADFCSC (November 2023)
 - **Placement:** 8th place out of 149 teams.
