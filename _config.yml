@@ -18,6 +18,7 @@ navbar-links:
   Contact: "https://www.mckeon.ca/contact"
   Experience:
     - Teaching: "https://www.mckeon.ca/teaching/"
+    - CTFs: "https://www.mckeon.ca/CTFs/"
   Resources:
     - Segfaults: "http://segfaults.net"
     - Online IDE: "https://repl.it"
