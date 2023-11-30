@@ -4,7 +4,8 @@ title: Contact Me
 subtitle: Capt Stephen McKeon, RMC, BEng, MASc
 ---
 
-Aircraft Cyber Vulnerability Assessment Engineer, Director Technical Airworthiness and Engineering Support (DTAES 8-5-2)
+Aircraft Cyber Vulnerability Assessment Engineer
+Director Technical Airworthiness and Engineering Support (DTAES 8-5-2)
 
 ### Coordinates 
 Capt Stephen McKeon  
