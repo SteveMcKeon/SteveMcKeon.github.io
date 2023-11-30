@@ -43,8 +43,6 @@ Exercises I have participated in with scoring highlights.
 - **Placement:** 18th place out of 74 teams.
 - **Team:** Segfaults.
 
-
 #### NorthSec (May 2018)
 - **Placement:** 7th place out of 50 teams.
 - **Team:** Segfaults.
----
