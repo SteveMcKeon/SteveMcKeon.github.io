@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Capture The Flag
+title: 
 <!-- toc: true -->
 description: Exercises I have participated in with scoring highlights.
 ---
