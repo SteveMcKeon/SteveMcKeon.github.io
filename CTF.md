@@ -1,11 +1,11 @@
 ---
 layout: page
-title: CTFs
+title: Capture The Flag Competitions
 <!-- toc: true -->
 description: Exercises I have participated in with scoring highlights.
 ---
 
-### Capture The Flag Competitions
+Exercises I have participated in with scoring highlights.
 
 #### ADFCSC (November 2023)
 - **Placement:** 8th place out of 149 teams.
