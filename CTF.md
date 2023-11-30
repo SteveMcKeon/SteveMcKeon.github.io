@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: CTFs
 <!-- toc: true -->
 description: Exercises I have participated in with scoring highlights.
 ---
