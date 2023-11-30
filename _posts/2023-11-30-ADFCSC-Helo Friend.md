@@ -3,7 +3,7 @@ layout: post
 title: Helo Friend
 subtitle: ADFCSC23 CTF Challenge Writeup
 thumbnail-img: /assets/img/ADFCSC-Logo.png
-tags: [ADFCSC23, ctf]
+tags: [ADFCSC23, ctf, Helo friend]
 ---
 
 ##Challenge Overview
@@ -18,25 +18,25 @@ The clue to the challenge was subtly hidden in its title, with "Helo" being a pl
 
 Armed with a pcap file, I launched into the investigation using Wireshark. The presence of HTTP was immediately noticeable. Filtering HTTP traffic **(http.request.method == "GET")** revealed repetitive GET requests to three web pages, with one odd request standing out - a GET request to the root directory. However, this turned out to be a red herring, leading to a Wikipedia page.
 
-![Initial data](../assets/img/ADFCSC23/helo_friend_1.png){: .mx-auto.d-block :}
+![Anomolous GET request](../assets/img/ADFCSC23/helo_friend_1.png){: .mx-auto.d-block :}
 
 ##The Real Breakthrough: SMTP
 
 Taking a cue from the challenge's name, I checked the Protocol Hierarchy under Wireshark's Statistics and, sure enough, SMTP surfaced. Filtering for SMTP led to a crucial discovery: SMTP/IMF packets that made email content readable. Among the five emails found, "Project List" was notably large and contained x-7z-compressed data.
 
-![Initial data](../assets/img/ADFCSC23/helo_friend_2.png){: .mx-auto.d-block :}
+![Email traffic filtered on IMF](../assets/img/ADFCSC23/helo_friend_2.png){: .mx-auto.d-block :}
 
 ##Cracking the Code
 
 The plot thickened when I found an email from an employee, Bill, sending a file **to_send.7z** to **joe_49@randowebmail.com**. This file, encoded in base64, was extracted using CyberChef, revealing a password-protected 7zip archive.
 
-![Initial data](../assets/img/ADFCSC23/helo_friend_3.png){: .mx-auto.d-block :}
+![Password protected extract archive](../assets/img/ADFCSC23/helo_friend_3.png){: .mx-auto.d-block :}
 
 ##Finding the Password
 
 Intriguingly, another email titled "That catchphrase" contained what seemed like a random string **vespers-gag-LYNCH-strategy**. This, however, turned out to be the key to unlocking the archive!
 
-![Initial data](../assets/img/ADFCSC23/helo_friend_4.png){: .mx-auto.d-block :}
+![Strange catchphrase](../assets/img/ADFCSC23/helo_friend_4.png){: .mx-auto.d-block :}
 
 ##The Flag Revealed
 
