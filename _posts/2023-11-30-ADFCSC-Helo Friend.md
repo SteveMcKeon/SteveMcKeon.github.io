@@ -38,7 +38,7 @@ Intriguingly, another email titled "That catchphrase" contained what seemed like
 
 ## The Flag Revealed
 
-Upon unlocking the archive with the catchphrase as the password, a PDF titled "Flag.pdf" was found. And there it was, the flag we'd been seeking: **The_Net_Never_Lines_Up**.
+Upon unlocking the archive with the catchphrase as the password, a PDF titled "Flag.pdf" was found. And there it was, for a whopping 340 points, the flag we'd been seeking: **The_Net_Never_Lines_Up**.
 
 ## Key Takeaways
 
