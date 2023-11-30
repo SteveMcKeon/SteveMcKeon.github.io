@@ -10,6 +10,7 @@ The task seemed straightforward yet mysterious: analyze a traffic dump from a ma
  
 The challenge description was as follows:
 >You suspect that someone has been emailing confidential company information. So you take a traffic dump from the mail server and then analyse it on your own laptop.
+
 The clue to the challenge was subtly hidden in its title, with "Helo" being a play on the SMTP protocol's commands (HELO/EHLO).
 
 ## Initial Analysis with Wireshark
