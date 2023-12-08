@@ -25,7 +25,3 @@ While this repository is primarily for informational purposes, contributions or 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Note: Replace `[specific license terms]` with the actual license terms you intend to use for your project.
