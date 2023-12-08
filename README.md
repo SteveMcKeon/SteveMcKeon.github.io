@@ -13,10 +13,10 @@ This repository hosts the source code for Stephen McKeon's personal website, a h
 
 ## Repository Structure
 
-- `Home/`: Contains the landing page content.
-- `About/`: Files detailing Stephen's professional background.
-- `CTF/`: Resources and information about CTF competitions.
-- `Teaching/`: Course materials and descriptions of subjects taught by Stephen.
+- `/`: Contains the landing page content.
+- `/About/`: Files detailing Stephen's professional background.
+- `/CTF/`: Resources and information about CTF competitions.
+- `/Teaching/`: Course materials and descriptions of subjects taught by Stephen.
 
 ## Contributions
 
