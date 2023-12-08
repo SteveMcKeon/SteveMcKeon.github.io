@@ -6,10 +6,10 @@ This repository hosts the source code for Stephen McKeon's personal website, a h
 
 ### Key Sections:
 
-1. **Home**: Introduction to Stephen McKeon and his professional interests.
-2. **About**: Background information about Stephen, outlining his career and academic achievements.
-3. **CTF**: Details about Capture The Flag competitions, emphasizing Stephen's role and experiences in these cybersecurity contests.
-4. **Teaching**: Comprehensive information about the courses Stephen has taught, covering various topics in computer science and cybersecurity.
+1. **Landing Page**: Blog style website, showcasing most recent entries at the top.
+2. **About**: Background information about myself, outlining his career and academic achievements.
+3. **CTF**: Details about Capture The Flag competitions, emphasizing my role and experiences in these cybersecurity contests.
+4. **Teaching**: Comprehensive information about the courses I have taught, covering various topics in computer science and cybersecurity.
 
 ## Repository Structure
 
