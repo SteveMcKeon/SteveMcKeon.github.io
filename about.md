@@ -23,3 +23,7 @@ I started a PhD from Queen's University in 2022, and as of 2023, I work as a Cyb
 * Capture the Flag event writeups,
 * Random musings and reflections, and
 * A place to gather my thoughts and keep track of accomplishments.
+
+## Acknowledgements
+
+Thanks to Dean Attali for creating the [Beautiful Jekyll template](https://github.com/daattali/beautiful-jekyll).
