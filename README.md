@@ -25,3 +25,6 @@ While this repository is primarily for informational purposes, contributions or 
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+Thanks to Dean Attali for creating the [Beautiful Jekyll template](https://github.com/daattali/beautiful-jekyll). 
