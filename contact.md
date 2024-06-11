@@ -4,7 +4,7 @@ title: Contact Me
 subtitle: Maj Stephen McKeon, RMC, BEng, MASc
 ---
 
-Team Lead \ Aircraft Cyber Vulnerability Assessment Engineer \
+Team Lead / Aircraft Cyber Vulnerability Assessment Engineer \
 Director Technical Airworthiness and Engineering Support (DTAES 8-5)
 
 ### Coordinates 
