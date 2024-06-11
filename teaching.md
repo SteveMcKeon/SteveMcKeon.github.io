@@ -50,10 +50,11 @@ Second-year undergraduate course involving using mobile robots as an application
 
 ---
 
-### Graduate Courses (Teaching assistant) <a name="graduate"></a>
+### Graduate Courses<a name="graduate"></a>
 
 #### EE595: Cyber Threat and Attack Techniques <a name="EE595"></a>
-**Semesters:** Fall 2019, Fall 2020, Fall 2021
+**Semesters:** Fall 2019, Fall 2020, Fall 2021 (Teaching assistant)
+
 
 Those operating in the cyber domain that is tasked with the defence of networks and computer systems must have a sound understanding of the threats that they face and of the techniques used by their adversaries; this course discusses the fundamentals of Cyber threats and attack techniques, with a heavy focus on practical applications. Topics include current cyber threat categories and general capabilities; attack techniques including password cracking, buffer and heap overflows, IP and DNS spoofing, viruses and worms, backdoors and remote access tools, key loggers, tunnelling and covert channels, SQL injection and cross-site scripting; advanced evasion techniques such as polymorphic code and rootkits. The course also introduces malware construction including assembly level program flow control and return oriented programming.
 
@@ -62,7 +63,7 @@ Those operating in the cyber domain that is tasked with the defence of networks 
 ### Professional Certificate Courses <a name="professional"></a>
 
 #### Security of Platform / Operational Technology Systems (SPOTS) <a name="SPOTS"></a>
-**Serials:** Fall 2021, Winter 2023 (Only 2 serials to date)
+**Serials:** Fall 2021, Winter 2023
 
 This course provides a comprehensive introduction to cybersecurity issues unique to platform and operational technology systems. The course is engineering focused and includes advanced technical concepts within computer security. This course prepares students to guide and/or provide advice to Weapons System Managers (WSMs) and/or Project Management Offices (PMOs) on platform/OT cybersecurity matters such as security threat and vulnerability assessments, security architecture and protection measures, and defensive cyber operation support.
 
