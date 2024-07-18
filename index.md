@@ -1,7 +1,5 @@
 ---
 layout: home
-title: Stephen McKeon
-subtitle: Royal Military College of Canada
-subtitle2: Department of Electrical and Computer Engineering
+title: Personal Blog
 use-site-title: true
 ---
