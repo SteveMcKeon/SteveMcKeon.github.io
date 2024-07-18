@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: Maj Stephen McKeon, RMC, BEng, MASc, P.Eng.
+subtitle: Maj Stephen McKeon, CD, BEng, MASc, P.Eng., RMC
 ---
 
 ### Who am I? 
