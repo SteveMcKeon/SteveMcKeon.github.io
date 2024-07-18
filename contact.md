@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact Me
-subtitle: Maj Stephen McKeon, RMC, BEng, MASc
+subtitle: Maj Stephen McKeon, CD, BEng, MASc, P.Eng., RMC
 ---
 
 Team Lead / Aircraft Cyber Vulnerability Assessment Engineer \
