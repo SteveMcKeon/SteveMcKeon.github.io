@@ -7,6 +7,11 @@ description: Exercises I have participated in with scoring highlights.
 
 Exercises I have participated in with scoring highlights.
 
+#### CyberChess CTF (September 2024)
+- **Placement:** 17th place out of 70 teams.
+- **Team:** CyTF2-CERT.LV.
+- **Highlight:** Individually solved 10 of the 20 available challenges in the CTF.
+
 #### ADFCSC (November 2023)
 - **Placement:** 8th place out of 149 teams.
 - **Team:** Segfaults.
@@ -16,7 +21,7 @@ Exercises I have participated in with scoring highlights.
 - **Placement:** 1st place out of 12 teams.
 - **Team:** Spetsnaz.
 
-#### Parsons AFCEA TechNet (August 2023)
+#### AFCEA TechNet Augusta (August 2023)
 - **Placement:** 4th place out of 38 teams.
 - **Team:** Segfaults.
 
@@ -31,7 +36,7 @@ Exercises I have participated in with scoring highlights.
 - **Placement:** 7th place out of 152 teams.
 - **Team:** Segfaults.
 
-#### Parsons AFCEA TechNet (August 2022)
+#### AFCEA TechNet Augusta (August 2022)
 - **Placement:** 1st place out of 80 teams.
 - **Team:** Segfaults.
 
