@@ -19,6 +19,32 @@ description: My teaching experience
 
 --- -->
 
+### Professional Certificate Courses <a name="professional"></a>
+
+#### Threat Hunt Workshop
+**Serials:** Oct 2024 (inaugural), Feb 2025
+
+I developed the Threat Hunt Workshop in collaboration with a colleague from CERT.LV while serving as the Cyber Task Force Commander in Latvia. This hands-on training initiative, designed to enhance the cybersecurity capabilities of NATO analysts, has brought together participants from over 25 countries to date. The workshop spans a week of immersive learning, combining lectures and practical labs where we focus on real-world threat-hunting techniques, with an emphasis on using Velociraptor, an advanced digital forensics tool for threat hunting at scale. The course is aimed at junior to senior analysts and empowers them to identify, analyze, and respond to cyber threats, covering topics such as network defense, threat detection, and persistent access identification.
+
+Through collaborative problem-solving, participants engage in a variety of challenges, including Capture The Flag (CTF) activities, which enhance their ability to detect and mitigate cyber threats effectively. This workshop not only equips analysts with technical skills but also fosters international cooperation and strengthens the collective cybersecurity posture of participating nations.
+
+#### Security of Platform / Operational Technology Systems (SPOTS) <a name="SPOTS"></a>
+**Serials:** Fall 2021, Winter 2023
+
+This course provides a comprehensive introduction to cybersecurity issues unique to platform and operational technology systems. The course is engineering focused and includes advanced technical concepts within computer security. This course prepares students to guide and/or provide advice to Weapons System Managers (WSMs) and/or Project Management Offices (PMOs) on platform/OT cybersecurity matters such as security threat and vulnerability assessments, security architecture and protection measures, and defensive cyber operation support.
+
+I developed and taught the Security Architecture module, which covers topics on Security Architecture Design Principles; Encryption, Authentication and Authorization; and Segmentation. I also developed various laboratory exercises encompassing live capture of 1553 databus traffic, traffic analysis, and attack techniques, as well as a laboratory exercise involving the vulnerabilities associated with Software System Updates for operational technologies involving insider threats & waterhole attacks exploiting data authentication and segmentation vulnerabilities. This course became core training for Cyber Operators in the Canadian Armed Forces entering more advanced stages of their career, starting in Sept 2024.
+
+
+#### Short Course in Networks and Security (SCINS) <a name="SCINS"></a>
+**Serials:** Fall 2021, Winter 2022
+
+The primary objective of this course is to provide students with an introduction to computer networks and to the security issues surrounding computer networks. The philosophy throughout the course is to provide a high ratio of hands-on practice to class-based learning. The course is designed to provide the foundation material necessary before attending more specialized training in computer security. 
+
+I taught the Operating System Security module. Lecture topics include an introduction to operating systems, basic Windows architecture, vulnerabilities and defences, basic UNIX architecture, vulnerabilities and defences, and file systems. This course became core training for Cyber Operators in the Canadian Armed Forces entering more advanced stages of their career, starting in Sept 2024.
+
+---
+
 ### Undergraduate Courses <a name="undergraduate"></a>
 
 #### GEF404: Cyber Defence <a name="GEF404"></a>
@@ -55,24 +81,4 @@ Second-year undergraduate course involving using mobile robots as an application
 #### EE595: Cyber Threat and Attack Techniques <a name="EE595"></a>
 **Semesters:** Fall 2019, Fall 2020, Fall 2021 (Teaching assistant)
 
-
 Those operating in the cyber domain that is tasked with the defence of networks and computer systems must have a sound understanding of the threats that they face and of the techniques used by their adversaries; this course discusses the fundamentals of Cyber threats and attack techniques, with a heavy focus on practical applications. Topics include current cyber threat categories and general capabilities; attack techniques including password cracking, buffer and heap overflows, IP and DNS spoofing, viruses and worms, backdoors and remote access tools, key loggers, tunnelling and covert channels, SQL injection and cross-site scripting; advanced evasion techniques such as polymorphic code and rootkits. The course also introduces malware construction including assembly level program flow control and return oriented programming.
-
----
-
-### Professional Certificate Courses <a name="professional"></a>
-
-#### Security of Platform / Operational Technology Systems (SPOTS) <a name="SPOTS"></a>
-**Serials:** Fall 2021, Winter 2023
-
-This course provides a comprehensive introduction to cybersecurity issues unique to platform and operational technology systems. The course is engineering focused and includes advanced technical concepts within computer security. This course prepares students to guide and/or provide advice to Weapons System Managers (WSMs) and/or Project Management Offices (PMOs) on platform/OT cybersecurity matters such as security threat and vulnerability assessments, security architecture and protection measures, and defensive cyber operation support.
-
-I developed and taught the Security Architecture module, which covers topics on Security Architecture Design Principles; Encryption, Authentication and Authorization; and Segmentation. I also developed various laboratory exercises encompassing live capture of 1553 databus traffic, traffic analysis, and attack techniques, as well as a laboratory exercise involving the vulnerabilities associated with Software System Updates for operational technologies involving insider threats & waterhole attacks exploiting data authentication and segmentation vulnerabilities.
-
-
-#### Short Course in Networks and Security (SCINS) <a name="SCINS"></a>
-**Serials:** Fall 2021, Winter 2022
-
-The primary objective of this course is to provide students with an introduction to computer networks and to the security issues surrounding computer networks. The philosophy throughout the course is to provide a high ratio of hands-on practice to class-based learning. The course is designed to provide the foundation material necessary before attending more specialized training in computer security. 
-
-I taught the Operating System Security module. Lecture topics include an introduction to operating systems, basic Windows architecture, vulnerabilities and defences, basic UNIX architecture, vulnerabilities and defences, and file systems.
