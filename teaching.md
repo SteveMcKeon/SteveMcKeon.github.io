@@ -29,7 +29,7 @@ I developed the Threat Hunt Workshop in collaboration with a colleague from CERT
 Through collaborative problem-solving, participants engage in a variety of challenges, including Capture The Flag (CTF) activities, which enhance their ability to detect and mitigate cyber threats effectively. This workshop not only equips analysts with technical skills but also fosters international cooperation and strengthens the collective cybersecurity posture of participating nations.
 
 #### Security of Platform / Operational Technology Systems (SPOTS) <a name="SPOTS"></a>
-**Serials:** Fall 2021, Winter 2023
+**Serials:** Fall 2021 (inaugural), Winter 2023
 
 This course provides a comprehensive introduction to cybersecurity issues unique to platform and operational technology systems. The course is engineering focused and includes advanced technical concepts within computer security. This course prepares students to guide and/or provide advice to Weapons System Managers (WSMs) and/or Project Management Offices (PMOs) on platform/OT cybersecurity matters such as security threat and vulnerability assessments, security architecture and protection measures, and defensive cyber operation support.
 
