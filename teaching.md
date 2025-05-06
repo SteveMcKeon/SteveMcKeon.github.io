@@ -22,7 +22,7 @@ description: My teaching experience
 ### Professional Certificate Courses <a name="professional"></a>
 
 #### Threat Hunt Workshop
-**Serials:** Oct 2024 (inaugural), Feb 2025
+**Serials:** Oct 2024 (inaugural), Feb 2025, April 2025
 
 I developed the Threat Hunt Workshop in collaboration with a colleague from CERT.LV while serving as the Cyber Task Force Commander in Latvia. This hands-on training initiative, designed to enhance the cybersecurity capabilities of NATO analysts, has brought together participants from over 25 countries to date. The workshop spans a week of immersive learning, combining lectures and practical labs where we focus on real-world threat-hunting techniques, with an emphasis on using Velociraptor, an advanced digital forensics tool for threat hunting at scale. The course is aimed at junior to senior analysts and empowers them to identify, analyze, and respond to cyber threats, covering topics such as network defense, threat detection, and persistent access identification.
 
