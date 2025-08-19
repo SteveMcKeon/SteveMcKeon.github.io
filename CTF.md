@@ -7,6 +7,11 @@ description: Exercises I have participated in with scoring highlights.
 
 Exercises I have participated in with scoring highlights.
 
+#### TechNet Augusta (August 2025)
+- **Placement:** 3rd place.
+- **Team:** Segfaults.
+- **Highlight:** Scored **5595** points of the team’s **8225** total.
+
 #### CyberChess CTF (September 2024)
 - **Placement:** 17th place out of 70 teams.
 - **Team:** CyTF2-CERT.LV.
@@ -51,3 +56,4 @@ Exercises I have participated in with scoring highlights.
 #### NorthSec (May 2018)
 - **Placement:** 7th place out of 50 teams.
 - **Team:** Segfaults.
+
