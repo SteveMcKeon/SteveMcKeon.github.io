@@ -7,6 +7,21 @@ description: Exercises I have participated in with scoring highlights.
 
 Exercises I have participated in with scoring highlights.
 
+#### The Great Canadian CTF by HTB (Feb 2026)
+- **Placement:** Finished in Quarter Finals
+- **Team:** Segfaults.
+- **Highlight:** Finished the 4-hour round in 101 minutes. 
+
+#### BSides Ottawa Professional CTF (Nov 2025)
+- **Placement:** 1st place out of 12 teams.
+- **Team:** EHPT-CobraChickens.
+- **Highlight:** Finished with 4 hours to spare... then joined and completed the Amateur CTF in 1 hour, placing 3rd.
+  
+#### CyberChess CTF (October 2025)
+- **Placement:** 3rd place (international), with 60 total teams.
+- **Team:** CyTF2.
+- **Highlight:** Found **all** of the team’s flags; only participated for 6 hours.
+
 #### TechNet Augusta (August 2025)
 - **Placement:** 3rd place.
 - **Team:** Segfaults.
@@ -56,4 +71,5 @@ Exercises I have participated in with scoring highlights.
 #### NorthSec (May 2018)
 - **Placement:** 7th place out of 50 teams.
 - **Team:** Segfaults.
+
 
